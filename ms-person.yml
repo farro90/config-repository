@@ -4,7 +4,7 @@ spring:
       #authentication-database: admin
       database: admin
       port: 27017
-      #host: localhost
+      host: mongo-database
       #username: root
       #password: 1234
 
