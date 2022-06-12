@@ -4,15 +4,11 @@ spring:
       discovery:
         locator:
           enabled: true
-  gateway:
-    discovery:
-      locator:
-        enabled: true
-    routes:
-      - id: service-ms-person
-        uri: lb://service-ms-person
-        predicates:
-          - Path=/person/**
+      routes:
+        - id: service-ms-person
+          uri: lb://service-ms-person
+          predicates:
+            - Path=/person/**
 
 eureka:
   client:
