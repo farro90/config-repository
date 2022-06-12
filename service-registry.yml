@@ -1,7 +1,3 @@
-spring:
-  application:
-    name: service-regisry
-
 eureka:
   #instance:
   #hostname: localhost
