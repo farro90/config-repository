@@ -15,7 +15,7 @@ spring:
       - id: ms-person
         uri: lb://ms-person
         predicates:
-          - Path=/api/person/**
+          - Path=/person/**
 
 eureka:
   client:
