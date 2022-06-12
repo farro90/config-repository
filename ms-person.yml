@@ -3,10 +3,10 @@ spring:
     mongodb:
       #authentication-database: admin
       database: admin
-      port: 27017
-      host: mongo-database
+      port: 27027
+      host: localhost
       #username: root
       #password: 1234
 
 server:
-  port: 8080
+  port: 8090
