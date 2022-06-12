@@ -4,6 +4,18 @@ spring:
       discovery:
         locator:
           enabled: true
+  config:
+    enabled: true
+    uri: http://api-gateway:8080
+  gateway:
+    discovery:
+      locator:
+        enabled: true
+    routes:
+      - id: ms-person
+        uri: lb://ms-person
+        predicates:
+          - Path=/api/person/**
 
 eureka:
   client:
