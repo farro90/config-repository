@@ -6,7 +6,7 @@ spring:
           enabled: true
       routes:
         - id: ms-person
-          uri: lb://service-ms-person
+          uri: lb://ms-person
           predicates:
             - Path=/person/**
 
