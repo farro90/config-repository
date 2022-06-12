@@ -4,9 +4,6 @@ spring:
       discovery:
         locator:
           enabled: true
-  config:
-    enabled: true
-    uri: http://api-gateway:8080
   gateway:
     discovery:
       locator:
