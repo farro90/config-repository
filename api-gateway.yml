@@ -9,7 +9,7 @@ spring:
           uri: http://localhost:8091
           #uri: lb://ms-client-person
           predicates:
-            - Path=/client/person/**
+            - Path=/api/client/person/**
 
 eureka:
   client:
