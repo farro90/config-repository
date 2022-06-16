@@ -5,10 +5,10 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: ms-person
-          uri: lb://ms-person
+        - id: ms-client-person
+          uri: lb://ms-client-person
           predicates:
-            - Path=/person/**
+            - Path=/client/person/**
 
 eureka:
   client:
