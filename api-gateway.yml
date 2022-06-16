@@ -6,7 +6,8 @@ spring:
           enabled: true
       routes:
         - id: ms-client-person
-          uri: lb://ms-client-person
+          uri: lb://localhost:8091
+          #uri: lb://ms-client-person
           predicates:
             - Path=/client/person/**
 
