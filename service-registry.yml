@@ -8,5 +8,4 @@ eureka:
     #defaultZone: hhtp://${eureka.instance.hostname}:${server.port}/eureka/
 
 server:
-  #port: 8761
-  port: 8082
+  port: 8761
