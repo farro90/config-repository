@@ -10,7 +10,62 @@ spring:
           #uri: lb://ms-client-person
           predicates:
             - Path=/api/client/person/**
-
+        - id: ms-client-business
+            uri: http://localhost:8092
+            predicates:
+              - Path=/api/client/business/**
+        - id: ms-product-active
+            uri: http://localhost:8093
+            predicates:
+              - Path=/api/product/active/**
+        - id: ms-product-pasive
+            uri: http://localhost:8094
+            predicates:
+              - Path=/api/product/pasive/**
+        - id: ms-management-credit
+            uri: http://localhost:8099
+            predicates:
+              - Path=/api/credit/**}
+        - id: ms-management-credit-card
+            uri: http://localhost:8100
+            predicates:
+              - Path=/api/credit-card/**
+        - id: ms-management-current-acount-person
+            uri: http://localhost:8097
+            predicates:
+              - Path=/api/current-account-person/**
+        - id: ms-management-current-acount-business
+            uri: http://localhost:8096
+            predicates:
+              - Path=/api/current-account-business/**
+        - id: ms-management-saving-acount-person
+            uri: http://localhost:8095
+            predicates:
+              - Path=/api/saving-account-person/**
+        - id: ms-management-fixed-term-acount-person
+            uri: http://localhost:8098
+            predicates:
+              - Path=/api/fixed-term-account-person/**
+        - id: ms-transaction-credit
+            uri: http://localhost:8104
+            predicates:
+              - Path=/api/transaction/credit/**}
+        - id: ms-transaction-credit-card
+            uri: lb://ms-transaction-credit-card
+            predicates:
+              - Path=/api/transaction/credit-card/**
+        - id: ms-transaction-current-acount
+            uri: lb://ms-transaction-current-acount
+            predicates:
+              - Path=/api/transaction/current-account/**
+        - id: ms-transaction-saving-acount
+            uri: lb://ms-transaction-saving-acount
+            predicates:
+              - Path=/api/transaction/saving-account/**
+        - id: ms-transaction-fixed-term-acount
+            uri: lb://ms-transaction-fixed-term-acount
+            predicates:
+              - Path=/api/transaction/fixed-term-account/**
 eureka:
   client:
     service-url:
