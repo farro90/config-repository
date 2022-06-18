@@ -14,4 +14,4 @@ my:
     URL_GATEWAY: "http://localhost:8080"
 
 server:
-  port: 8101
+  port: 8102
