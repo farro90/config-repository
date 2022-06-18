@@ -45,15 +45,15 @@ spring:
         - id: ms-transaction-saving-account
           uri: http://localhost:8110
           predicates:
-            - Path=/api/transaction/saving/person/**
+            - Path=/api/transaction/saving/**
         - id: ms-transaction-current-account
           uri: http://localhost:8111
           predicates:
-            - Path=/api/transaction/current-account/**
+            - Path=/api/transaction/current/**
         - id: ms-transaction-fixed-term-account
           uri: http://localhost:8112
           predicates:
-            - Path=/api/transaction/fixed-term-account/**
+            - Path=/api/transaction/fixed-term/**
         - id: ms-transaction-credit
           uri: http://localhost:8113
           predicates:
