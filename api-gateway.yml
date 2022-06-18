@@ -10,7 +10,62 @@ spring:
           #uri: lb://ms-client-person
           predicates:
             - Path=/api/client/person/**
-        
+        - id: ms-client-business
+          uri: http://localhost:8102
+          predicates:
+            - Path=/api/client/business/**
+        - id: ms-product-pasive
+          uri: http://localhost:8103
+          predicates:
+            - Path=/api/product/pasive/**
+        - id: ms-product-active
+          uri: http://localhost:8104
+          predicates:
+            - Path=/api/product/active/**
+        - id: ms-management-saving-acount
+          uri: http://localhost:8105
+          predicates:
+            - Path=/api/saving-account/**
+        - id: ms-management-current-acount
+          uri: http://localhost:8106
+          predicates:
+            - Path=/api/current-account/**
+        - id: ms-management-fixed-term-acount
+          uri: http://localhost:8107
+          predicates:
+            - Path=/api/fixed-term-account/**
+        - id: ms-management-credit
+          uri: http://localhost:8108
+          predicates:
+            - Path=/api/credit/**
+        - id: ms-management-credit-card
+          uri: http://localhost:8109
+          predicates:
+            - Path=/api/credit-card/**
+        - id: ms-transaction-saving-acount
+          uri: http://localhost:8110
+          predicates:
+            - Path=/api/transaction/saving-account/**
+        - id: ms-transaction-current-acount
+          uri: http://localhost:8111
+          predicates:
+            - Path=/api/transaction/current-account/**
+        - id: ms-transaction-fixed-term-acount
+          uri: http://localhost:8112
+          predicates:
+            - Path=/api/transaction/fixed-term-account/**
+        - id: ms-transaction-credit
+          uri: http://localhost:8113
+          predicates:
+            - Path=/api/transaction/credit/**
+        - id: ms-transaction-credit-card
+          uri: http://localhost:8114
+          predicates:
+            - Path=/api/transaction/credit-card/**
+        - id: ms-transfer
+          uri: http://localhost:8115
+          predicates:
+            - Path=/api/transfer/**
 eureka:
   client:
     service-url:
