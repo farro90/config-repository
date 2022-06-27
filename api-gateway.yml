@@ -69,7 +69,7 @@ spring:
         - id: ms-wallet
           uri: http://localhost:8116
           predicates:
-            - Path=/api/wallet/**,/api/coin/**
+            - Path=/api/wallet/**
 eureka:
   client:
     service-url:
